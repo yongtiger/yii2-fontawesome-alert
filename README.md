@@ -1,4 +1,6 @@
-# yii2-fontawesome-alert
+# yii2-fontawesome-alert release version 1.0.0
+
+Alert widget renders a message from session flash wtih fontawesome icons and styles. All flash messages are displayed in the sequence they were assigned using setFlash.
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-fontawesome-alert/v/stable)](https://packagist.org/packages/yongtiger/yii2-fontawesome-alert)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-fontawesome-alert/downloads)](https://packagist.org/packages/yongtiger/yii2-fontawesome-alert) 
@@ -8,10 +10,7 @@
 
 ## FEATURES
 
-* Sample of extensions directory structure. `src`, `docs`, etc.
-* `README.md`
-* `composer.json`
-* `development-roadmap.md`
+* fontawesome icons and styles
 
 
 ## DEPENDENCES

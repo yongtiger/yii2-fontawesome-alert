@@ -13,9 +13,10 @@
 namespace yongtiger\fontawesomealert\widgets;
 
 use yii\bootstrap\Widget;
+use yongtiger\fontawesomealert\AlertAsset;
 
 /**
- * Alert widget renders a message from session flash for AdminLTE alerts. All flash messages are displayed
+ * Alert widget renders a message from session flash wtih fontawesome icons and styles. All flash messages are displayed
  * in the sequence they were assigned using setFlash. You can set message as following:
  *
  * ```php
@@ -28,7 +29,7 @@ use yii\bootstrap\Widget;
  * \Yii::$app->getSession()->setFlash('error', ['Error 1', 'Error 2']);
  * ```
  *
- * @package yongtiger\adminlteasset\widgets
+ * @package yongtiger\fontawesomealert\widgets
  */
 class Alert extends Widget
 {
@@ -38,7 +39,7 @@ class Alert extends Widget
      * - $key is the name of the session flash variable
      * - $value is the array:
      *       - class of alert type (i.e. danger, success, info, warning)
-     *       - icon for alert AdminLTE
+     *       - icon for alert
      */
     public $alertTypes = [
         'error' => [
@@ -106,5 +107,17 @@ class Alert extends Widget
                 }
             }
         }
+
+        $this->registerClientScript();
+    }
+
+    /**
+     * Registers necessary JavaScript.
+     *
+     * @return yii\web\AssetBundle the registered asset bundle instance
+     */
+    public function registerClientScript()
+    {
+        AlertAsset::register($this->view);
     }
 }

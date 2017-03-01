@@ -15,7 +15,7 @@ namespace yongtiger\fontawesomealert;
 use yii\web\AssetBundle;
 
 /**
- * AdminLte AssetBundle
+ * Alert AssetBundle
  */
 class AlertAsset extends AssetBundle
 {
@@ -24,8 +24,6 @@ class AlertAsset extends AssetBundle
      */
     public $depends = [
         'rmrevin\yii\fontawesome\AssetBundle',
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
     ];
 
     /**
