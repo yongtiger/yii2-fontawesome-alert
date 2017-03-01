@@ -13,7 +13,7 @@
 namespace yongtiger\fontawesomealert\widgets;
 
 use yii\bootstrap\Widget;
-use yongtiger\fontawesomealert\AlertAsset;
+use rmrevin\yii\fontawesome\AssetBundle;
 
 /**
  * Alert widget renders a message from session flash wtih fontawesome icons and styles. All flash messages are displayed
@@ -118,6 +118,6 @@ class Alert extends Widget
      */
     public function registerClientScript()
     {
-        AlertAsset::register($this->view);
+        AssetBundle::register($this->view);
     }
 }
